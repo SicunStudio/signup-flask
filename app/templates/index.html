@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}AU{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>同学你好<br><br> {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}这里是华中科技大学学生社团联合会【AU】<br><br>登陆请点击右上角{% endif %}</h1>
+</div>
+{% endblock %}
